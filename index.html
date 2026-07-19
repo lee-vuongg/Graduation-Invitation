@@ -258,14 +258,15 @@
   /* ---------- MAP BUTTON ---------- */
   .map-btn{
     display:inline-flex; align-items:center; gap:10px;
-    margin-top:14px; padding:14px 24px;
+    box-sizing:border-box; margin-top:0; padding:14px 24px;
     background:transparent; border:1px solid var(--teal);
     color:var(--teal); font-family:'JetBrains Mono',monospace;
-    font-size:12px; letter-spacing:0.1em; text-transform:uppercase;
+    font-size:12px; font-weight:400; line-height:1;
+    letter-spacing:0.1em; text-transform:uppercase;
     cursor:pointer; text-decoration:none; transition:background .3s ease, color .3s ease;
   }
   .map-btn:hover{background:var(--teal); color:var(--bg);}
-  .btn-row{display:flex; flex-wrap:wrap; gap:14px; justify-content:center; margin-top:28px;}
+  .btn-row{display:flex; flex-wrap:wrap; align-items:center; gap:14px; justify-content:center; margin-top:28px;}
   @media (max-width:480px){
     .btn-row{flex-direction:column; align-items:stretch;}
     .cal-btn, .map-btn{justify-content:center; margin-top:0;}
@@ -282,14 +283,17 @@
 
   /* ---------- FOOTER ---------- */
   .cal-btn{
+    -webkit-appearance:none; -moz-appearance:none; appearance:none;
     display:inline-flex; align-items:center; gap:10px;
-    margin-top:28px; padding:14px 24px;
+    box-sizing:border-box; margin-top:0; padding:14px 24px;
     background:transparent; border:1px solid var(--gold);
     color:var(--gold); font-family:'JetBrains Mono',monospace;
-    font-size:12px; letter-spacing:0.1em; text-transform:uppercase;
-    cursor:pointer; transition:background .3s ease, color .3s ease;
+    font-size:12px; font-weight:400; line-height:1;
+    letter-spacing:0.1em; text-transform:uppercase;
+    cursor:pointer; outline:none; transition:background .3s ease, color .3s ease;
   }
   .cal-btn:hover{background:var(--gold); color:var(--bg);}
+  .cal-btn:focus-visible, .map-btn:focus-visible{outline:1px dashed var(--muted); outline-offset:3px;}
 
   /* ---------- FOOTER ---------- */
   footer{
