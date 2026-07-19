@@ -360,6 +360,7 @@
         <option value="anh_ban">Ánh</option>
         <option value="nam">Nam</option>
         <option value="tam_ban">Tâm</option>
+        <option value="chien_ban">Chiến</option>
       </optgroup>
       <optgroup label="Anh / Chị">
         <option value="chi_hoa">Chị Hoa</option>
@@ -474,6 +475,7 @@
     anh_ban:    {name:"Ánh",       group:"friend"},
     nam:        {name:"Nam",       group:"friend"},
     tam_ban:    {name:"Tâm",       group:"friend"},
+    chien_ban:  {name:"Chiến",     group:"friend"},
     chi_hoa:    {name:"Chị Hoa",   group:"senior"},
     chi_chien:  {name:"Chị Chiến", group:"senior"},
     anh_ha:     {name:"Anh Hà",    group:"senior"},
@@ -489,7 +491,7 @@
     senior:  "Trân trọng kính mời",
     elder:   "Trân trọng kính mời",
     younger: "Gửi em",
-    partner: "Gửi Ebe của anh"
+    partner: "Của anh"
   };
 
   function friendMsg(n){
@@ -520,7 +522,7 @@
     return "Gửi em,<br><br>" +
     "4 năm đại học, từ những ngày đầu còn bỡ ngỡ cho đến hôm nay, lúc nào ngoảnh lại anh cũng thấy có em ở đó — cùng học, cùng thức khuya làm bài, cùng vượt qua từng kỳ thi.<br><br>" +
     "Ngày 24/07 này không chỉ là ngày anh tốt nghiệp, mà còn là một cột mốc của cả hai đứa mình, sau ngần ấy năm đi cùng nhau.<br><br>" +
-    "Anh muốn <b>" + n + "</b> đứng cạnh anh hôm đó, để mình cùng lưu lại một tấm ảnh của chúng mình cho chặng đường đã qua — và cho những chặng đường sắp tới, vẫn sẽ có nhau.";
+    "Anh muốn <b>" + n + "</b> đứng cạnh anh hôm đó, để mình cùng lưu lại một tấm ảnh cho chặng đường đã qua — và cho những chặng đường sắp tới, vẫn sẽ có nhau.";
   }
 
   var select = document.getElementById('guestSelect');
